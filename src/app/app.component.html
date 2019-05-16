@@ -1,85 +1,21 @@
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" [routerLink]="['/']">Fineas Racing Team</a>
-
-    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
-      <ul class="navbar-nav text-uppercase ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/cars']">Cars</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']">Fineas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/team']">Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/sponsors']">Sponsors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/contact']">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Main Content -->
-<div class="main container">
-  <div class="row">
-    <router-outlet></router-outlet>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <span class="copyright">Copyright &copy; Fineas Racing Team 2018</span>
-      </div>
-      <div class="col-md-4">
-        <ul class="list-inline social-buttons">
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/fineasracingteam" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/fineasracingteam" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.youtube.com" target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.twitter.com/fineasteam" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <ul class="list-inline quicklinks">
-          <li class="list-inline-item">
-            <a href="#">Privacy Policy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Terms of Use</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+<!--
+  ARXIKI SELIDA
+  <app-home></app-home>
+-->
+<!--
+  SPONSORS
+  <app-sponsors></app-sponsors>
+-->
+<!--
+  ABOUT US
+  <app-about-us></app-about-us>
+-->
+<!--
+  TEAM
+<app-team></app-team>
+-->
+<!--
+  CONTACT US
+  <app-contact-us></app-contact-us>
+-->
+<app-home></app-home>
