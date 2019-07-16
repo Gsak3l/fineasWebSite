@@ -1,149 +1,85 @@
-//contactus header css
-@import url(https://fonts.googleapis.com/css?family=Lato:900);
-*, *:before, *:after
+.mainSeperator
 {
-  box-sizing:border-box ;
-}
-body
-{
-  font-family: 'Source Sans Pro', sans-serif ;
-}
-div.foo
-{
-  width: 90% ;
-  margin: 0 auto ; 
-  text-align: center ;
-}
-.letter
-{
-  display: inline-block ;
-  font-weight: 900 ;
-  font-size: 2em ;
-  margin: 0.2em ;
-  position: relative ;
-  color: #0087ED ;
-  transform-style: preserve-3d ;
-  perspective: 400 ;
-  z-index: 1 ;
-}
-.letter:before, .letter:after
-{
-  position:absolute ;
-  content: attr(data-letter) ;
-  transform-origin: top left ;
-  top:0 ;
-  left:0 ;
-}
-.letter, .letter:before, .letter:after
-{
-  transition: all 0.3s ease-in-out ;
-}
-.letter:before
-{
-  color: #0087ED ;
-  text-shadow: 
-    -1px 0px 1px rgba(255,255,255,.8),
-    1px 0px 1px rgba(0,0,0,.8) ;
-  z-index: 3 ;
-  transform:
-    rotateX(0deg)
-    rotateY(-15deg)
-    rotateZ(0deg) ;
-}
-.letter:after
-{
-  color: #fff ;
-  z-index:2;
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(0deg)
-    rotateZ(0deg)
-    skew(0deg,1deg) ;
-}
-.letter:hover:before
-{
-  color: #fafafa ;
-  transform:
-    rotateX(0deg)
-    rotateY(-40deg)
-    rotateZ(0deg);
-}
-.letter:hover:after
-{
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(40deg)
-    rotateZ(0deg)
-    skew(0deg,22deg);
-}
-//position of contact us header
-#contactTitle
-{
-    height: auto ; 
-    width: auto ; 
-    float: center ;
-    text-align: center ;
-    padding-bottom: 60px ;
-}
-//position of the map
-#contactBody
-{
-    height: 300px ; 
-}
-#contactMap
-{
-    width: 28% ;
-    margin-left: 400px ; 
-    margin-right: auto ; 
-    float: left;
-    overflow: hidden ;
-    padding-bottom: 56.25% ;
-    position: relative ;
-    height: 0 ;
-}
-#contactMap iframe
-{
-    left: 0 ; 
-    top: 0 ;
-    height: 33.3% ;
-    width: 100% ;
-    position: absolute ; 
-}
-//position about the social media div
-#contactSocialMedia 
-{
-    float: left ;
-    padding-left: 50px ; 
-    padding-top: 30px ; 
-    padding-right: auto ; 
-    padding-bottom: auto ; 
-}
-#mail
-{
-    font-size: 30px ; 
+    margin: 70px ;  
     font-weight: bold ; 
 }
-#becomeSpon
+i.fa.fa-paper-plane
 {
-    padding-top: 10px ;
+  font-size: 34px ; 
+  color: #555555 ; 
+}
+.fa-icon-innter-text 
+{
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 24px; 
     font-weight: bold ; 
 }
-.footerv2
-{
-    margin-top: 250px ;
-    background: black ; 
-    position: absolute ; 
-    width: 100% ;
-}
-#cpRights
+.map-container
 { 
-    color: white ;  
-    padding-top: 5px ; 
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    font-size: 12px ; 
-    font-weight: normal ;
-    padding-left: 725px ;
-    padding-right: auto ;  
+  min-width: 300px ; 
+  overflow:hidden ;
+  padding-bottom:56.25% ; 
+  position:relative ;
+  height:0 ;
+}
+.map-container iframe
+{
+  left:0 ;
+  top:0 ;
+  height:100% ;
+  width:100% ;
+  position:absolute ;
+}
+.smci
+{
+  padding-top: 60px ; 
+}
+hr
+{
+  visibility:  hidden;
+}
+#bas
+{
+  font-weight: bold ; 
+  color: #555555 ;
+  font-size: 16px ;
+}
+//social media buttons
+ul.social-buttons 
+{
+	list-style:none ;
+	margin:0 ;
+	padding:0 ;
+}
+ul.social-buttons li 
+{
+	display:inline-block ;
+	margin-right:10px ;
+}
+ul.social-buttons li:last-child 
+{
+	margin-right:0 ;
+}
+.social-btn 
+{
+	width:40px ;
+	height:40px ;
+	display:inline-block ;
+  background: #0087ED ;
+	color:#EDEDED ;
+	font-size:17px ;
+	line-height:40px ;
+	text-align:center ;
+}
+.social-btn:hover,.social-btn:focus 
+{
+  color: #0087ED ;
+  background: #EDEDED ;
+}
+#cpr
+{
+  background-color: black ; 
+  color: #EDEDED ;
+  text-align: center ;
+  margin-top: 240px ; 
 }

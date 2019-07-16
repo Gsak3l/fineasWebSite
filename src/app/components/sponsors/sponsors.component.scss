@@ -1,205 +1,40 @@
-//letters
-@import url(https://fonts.googleapis.com/css?family=Lato:900);
-*, *:before, *:after
+.mainSeperator
 {
-  box-sizing:border-box ;
+    margin: 70px ;  
+    font-weight: bold ; 
 }
-body
+img
 {
-  font-family: 'Source Sans Pro', sans-serif ;
+  width: 100% ; 
 }
-div.foo
+.btn 
 {
-  width: 90% ;
-  margin: 0 auto ; 
-  text-align: center ;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: right;
 }
-.letter
+.btn-primary 
 {
-  display: inline-block ;
-  font-weight: 900 ;
-  font-size: 2em ;
-  margin: 0.2em ;
-  position: relative ;
-  color: #0087ED ;
-  transform-style: preserve-3d ;
-  perspective: 400 ;
-  z-index: 1 ;
+  font-size: 20px;
+  font-weight: bold ; 
+  color: #FFFFFF;
+  letter-spacing: 0.1px;
+  line-height: 15px;
+  border: 18px solid #0087ED;
+  border-radius: 40px;
+  background: #0087ED;
+  transition: all 0.3s ease 0s;
 }
-.letter:before, .letter:after
+.btn-primary:hover 
 {
-  position:absolute ;
-  content: attr(data-letter) ;
-  transform-origin: top left ;
-  top:0 ;
-  left:0 ;
+  color: #0087ED;
+  background: #EDEDED ;
+  border: 18px solid #EDEDED;
 }
-.letter, .letter:before, .letter:after
+#notSponsor
 {
-  transition: all 0.3s ease-in-out ;
-}
-.letter:before
-{
-  color: #0087ED ;
-  text-shadow: 
-    -1px 0px 1px rgba(255,255,255,.8),
-    1px 0px 1px rgba(0,0,0,.8) ;
-  z-index: 3 ;
-  transform:
-    rotateX(0deg)
-    rotateY(-15deg)
-    rotateZ(0deg) ;
-}
-.letter:after
-{
-  color: #fff ;
-  z-index:2;
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(0deg)
-    rotateZ(0deg)
-    skew(0deg,1deg) ;
-}
-.letter:hover:before
-{
-  color: #fafafa ;
-  transform:
-    rotateX(0deg)
-    rotateY(-40deg)
-    rotateZ(0deg);
-}
-.letter:hover:after
-{
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(40deg)
-    rotateZ(0deg)
-    skew(0deg,22deg);
-}
-//css for the sponsor text and pics
-.sponsorsD
-{
-    height: auto ; 
-    width: auto ; 
-    float: center;
-    text-align: center ;
-}
-#picsOfSponsors
-{
-    padding-right: 300px ; 
-    padding-left: auto ; 
-}
-//css for the buttons
-#btnSponsors
-{
-    width: 1920px ; 
-    padding-top: 50px ; 
-    padding-bottom: 100px ;
-    padding-left: 1200px ;
-    padding-right: auto ;    
-}
-.folding 
-{
-  display: inline-block ;
-  box-sizing: border-box ;
-  position: relative ;
-  box-shadow: inset 0 0 0.36666667em rgba(0, 0, 0, 0.5) ;
-  background: rgba(0, 0, 0, 0.1) ;
-  border-radius: 0.22em ;
-  padding: 0.55em 1.1em ;
-  perspective: 10em ;
-  transition: box-shadow 0.4s, border-radius 0.4s ;
-  text-decoration: none ;
-  text-align: center ;
-  vertical-align: middle ;
-  font: normal bold 1.1em arial, sans-serif, sans ;
-  outline: 0 none ;
-  color: #369 ;
-}
-.folding:before 
-{
-  content: attr(title) ;
-  display: block ;
-  box-sizing: border-box ;
-  width: 200px ;
-  position: absolute ;
-  z-index: 1000 ;
-  top: 0 ;
-  right: 0 ;
-  bottom: 0 ;
-  left: 0 ;
-  overflow: hidden ;
-  text-overflow: ellipsis ;
-  white-space: nowrap ;
-  border-radius: 0.22em ;
-  padding: 0.55em ;
-  transform-origin: 50% 100% ;
-  transform-style: preserve-3d ;
-  transition: transform 0.4s, color 0.3s, box-shadow 0.3s ;
-}
-.folding:hover:before
-{
-  border-radius: 0.22em 0.22em 0 0 ;
-  transform: rotateX(-120deg) ;
-}
-.folding.folding-bluefineas
-{
-  width: 200px ;
-  color: #0087ED ;
-}
-.folding.folding-bluefineas:before
-{
-  background: #0087ED ;
-  color: #fff ;
-}
-.folding.folding-bluefineas:hover:before
-{
-  color: transparent ;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 -1px 0 #0087ED, 0 -2px 0 -0.5px #0087ED, 0 -3px 0 -1px #0087ED, 0 -4px 0 -1.5px #0087ED, 0 -5px 0 -2.5px #0087ED, 0 -7px 0.2px -4px #0087ED ;
-}
-//footer
-.footer
-{
-  padding-top: 0px ; 
-  background: #000000 ; 
-}
-#socialize
-{
-  display: inline-block ;
-  font-weight: 900 ;
-  font-size: 1.7em ;
-  margin: 0.2em ;
-  position: relative ;
-  color: #FFFFF9 ;
-  transform-style: preserve-3d ;
-  perspective: 400 ;
-  z-index: 1 ;
-  width: 90% ;
-  text-align: center ;
-}
-#socialMediaIcons
-{
-  position: relative ;
-  float: center;
-}
-#socialMediaIcons img
-{
-  height: 52px ;
-  width: 52px ; 
-  padding: 8px ; 
-}
-#mail
-{
-  font-family: Georgia, 'Times New Roman', Times, serif ;
-  font-size: 18px ; 
-  font-weight: normal ;
-}
-#cpRights
-{ 
-  padding-top: 5px ; 
-  font-family: Georgia, 'Times New Roman', Times, serif ;
-  font-size: 12px ; 
-  font-weight: normal ;
+  padding-right: 30px ;
+  margin-bottom: -10px ; 
+  font-weight: bold ; 
+  text-align: right ;
 }

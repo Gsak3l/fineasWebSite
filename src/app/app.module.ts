@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { TeamComponent } from './components/team/team.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     AboutUsComponent,
     TeamComponent,
     ContactUsComponent,
+    FooterComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

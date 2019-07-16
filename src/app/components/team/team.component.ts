@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent implements OnInit {
-
+  private team1 = require("./imagesTeam/teamimage.jpg") ;
   constructor() { }
-
   ngOnInit() {
   }
-
 }
