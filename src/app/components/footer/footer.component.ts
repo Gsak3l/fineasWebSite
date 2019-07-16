@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
   private socialMedia1 = require("./imagesFooter/facebook.png");
   private socialMedia2 = require("./imagesFooter/twitter.png");
   private socialMedia3 = require("./imagesFooter/youtube.png");

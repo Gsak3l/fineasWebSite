@@ -83,3 +83,9 @@ ul.social-buttons li:last-child
   text-align: center ;
   margin-top: 240px ; 
 }
+//make normal footer dissapear
+footer.page-footer.font-small.special-color-dark.pt-4
+{
+  background-color: #0087ED !important ;
+  visibility: hidden !important ; 
+}
