@@ -33,7 +33,7 @@ p
   color: #FFFFFF;
   letter-spacing: 0.1px;
   line-height: 15px;
-  border: 10px solid #0087ED;
+  border: 9px solid #0087ED;
   border-radius: 40px;
   background: #0087ED;
   transition: all 0.3s ease 0s;
@@ -42,5 +42,61 @@ p
 {
   color: #0087ED;
   background: #EDEDED ;
-  border: 10px solid #EDEDED;
+  border: 9px solid #EDEDED;
+}
+//footer css
+.fooT
+{
+  margin-top: 15px ; 
+  background-color: #000000 ; 
+  text-align: center ;
+  color: #ffffff ; 
+}
+#ls h4
+{
+  text-align: left ;
+}
+.fooT img
+{
+  margin-right: 5px ; 
+  float: left ;
+  width: 35px ; 
+  padding-bottom: 10px ; 
+}
+.fooT h4
+{
+  padding-top: 30px ; 
+}
+#cpr
+{
+  padding-top: 10px ;
+  padding-bottom: 30px ; 
+}
+//footer css
+.fooT
+{
+  margin-top: 15px ; 
+  background-color: #000000 ; 
+  text-align: center ;
+  color: #ffffff ; 
+}
+#ls h4
+{
+  text-align: left ;
+}
+.fooT img
+{
+  margin-right: 5px ; 
+  float: left ;
+  width: 35px ; 
+  padding-bottom: 10px ; 
+}
+.fooT h4
+{
+  padding-top: 30px ; 
+}
+#cpr
+{
+  padding-top: 10px ;
+  padding-bottom: 30px ; 
 }
